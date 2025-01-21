@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>CONGRATULAZIONI SEI IL 1823792 VINCITORE</title></head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                overflow: hidden;
+            }
+            img {
+            width: 50%;
+            height: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            a{
+                display: flex;
+                margin-bottom: -8px;
+            }
+        </style>
+    <body> 
+        <div style="display: flex; align-items: flex-end; justify-content: center; height: 100%; width: 100%;">
+        <a href="./vittoria.html"><img src="./img/HAI_VINTO.png"></a>
+       </div> 
+    </body>
+    <script>
+        let hue = 0;
+
+        function changeBackgroundHue() {
+            document.body.style.backgroundColor = `hsl(${hue}, 70%, 80%)`;
+            hue = (hue + 10) % 360; 
+            requestAnimationFrame(changeBackgroundHue);
+        }
+        changeBackgroundHue();
+    </script>
+</html>
